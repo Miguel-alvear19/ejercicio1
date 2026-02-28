@@ -12,6 +12,12 @@ public class Main {
 
         System.out.println("\nDatos de la persona 2:");
         persona2.imprimirDatos();
+
+        persona1.calcularEdad(2026);
+        persona2.calcularEdad(2026);
+
+        System.out.println("\nEdad de la persona 1: " + persona1.calcularEdad(2026) + " años");
+        System.out.println("Edad de la persona 2: " + persona2.calcularEdad(2026) + " años");
         
     }
 }
