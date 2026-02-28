@@ -23,6 +23,7 @@ classDiagram
         +getAñoNacimiento() int
         +setAñoNacimiento(int) void
         +imprimirDatos() void
+        +calcularEdad(int añoActual) int
     }
 
     Main --> Persona: crea instancias
@@ -40,4 +41,6 @@ Clase que representa una persona con los siguientes atributos:
 - **numeroDocumento**: Número de documento de identidad
 - **añoNacimiento**: Año de nacimiento
 
-Incluye getters y setters para todos los atributos, así como un método `imprimirDatos()` que muestra la información de la persona en la consola.
+Incluye getters y setters para todos los atributos, así como:
+- `imprimirDatos()` que muestra la información de la persona en la consola.
+- `calcularEdad(int añoActual)`, que devuelve la edad calculada según el año proporcionado.
