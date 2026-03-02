@@ -56,7 +56,6 @@ public class Persona {
 
 
     public int calcularEdad(int añoActual) {
-        añoActual = 2026; // Puedes cambiar esto por el año actual
         return añoActual - añoNacimiento;
     }
 
