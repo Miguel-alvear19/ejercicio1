@@ -47,4 +47,17 @@ public class Persona {
     }
 
 
+    public void imprimirDatos() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Apellido: " + apellido);
+        System.out.println("Número de Documento: " + numeroDocumento);
+        System.out.println("Año de Nacimiento: " + añoNacimiento);
+    }
+
+
+    public int calcularEdad(int añoActual) {
+        return añoActual - añoNacimiento;
+    }
+
+
 }
