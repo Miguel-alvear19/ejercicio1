@@ -6,12 +6,17 @@ public class Persona {
     private String apellido;
     private int numeroDocumento;
     private int añoNacimiento;
+    private String paisNacimiento;
+    private char sexo;
 
-    public Persona(String nombre, String apellido, int numeroDocumento, int añoNacimiento) {
+
+    public Persona(String nombre, String apellido, int numeroDocumento, int añoNacimiento, String paisNacimiento, char sexo ) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.numeroDocumento = numeroDocumento;
         this.añoNacimiento = añoNacimiento;
+        this.paisNacimiento = paisNacimiento;
+        this.sexo = sexo;
     }
 
     public String getNombre() {
@@ -46,12 +51,30 @@ public class Persona {
         this.añoNacimiento = añoNacimiento;
     }
 
+    public String getPaisNacimiento() {
+        return paisNacimiento;
+    }
+
+    public void setPaisNacimiento(String paisNacimiento) {
+        this.paisNacimiento = paisNacimiento;
+    }
+
+    public char getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(char sexo) {
+        this.sexo = sexo;
+    }  
+
 
     public void imprimirDatos() {
         System.out.println("Nombre: " + nombre);
         System.out.println("Apellido: " + apellido);
         System.out.println("Número de Documento: " + numeroDocumento);
         System.out.println("Año de Nacimiento: " + añoNacimiento);
+        System.out.println("País de Nacimiento: " + paisNacimiento);
+        System.out.println("Sexo: " + sexo);
     }
 
 
